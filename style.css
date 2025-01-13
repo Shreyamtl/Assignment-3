@@ -26,10 +26,13 @@ body {
   
   @keyframes bounceAndRotate {
     0%, 100% {
-      transform: translateY(0) rotate(0deg); 
-      transform: translateY(-260px) rotate(360deg);
+        transform: translateY(0) rotate(0deg); /* Start and end at the bottom with no rotation */
     }
-  }
+    50% {
+        transform: translateY(-260px) rotate(180deg); /* Move the ball up and rotate 180 degrees */
+    }
+}
+
   
   @keyframes changeColor {
     0% {
